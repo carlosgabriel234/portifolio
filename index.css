@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+
+
+
+nav{
+    margin: 10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+
+.name_imagen{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 8%;
+}
+
+
+
+.mobile-menu-icon img{
+    width: 25px;
+    
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.foto-codico{
+    width: 34px;
+    
+    
+    
+}
+.menu{
+    display: flex;
+    gap: 80px; 
+     
+}
+
+
+
+.menu a{
+    position: relative;
+    margin-left: -10%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+
+/*navegação  */
+
+.imagen{
+    position: absolute;
+    max-width: 50%;
+    margin-left: 50%;
+    
+}
+
+.lado-esquerdo{
+    position: absolute;
+    margin-left: 9%;
+    margin-top: 13%;
+}
+
+main h3{
+    color: #6f7b81;
+    font-size: 23px;
+}main h1{
+    color: #393f42;
+    font-size: 40px;
+}
+
+/* Parte do meio */
+
+
+
+
+.informacoes{
+    display: flex;
+    margin-top: 26%;
+    margin-left: 11%;
+}
+
+.informacoes input{
+    width: 170px;
+    height: 38px;
+    border-radius: 20px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+.icones_redes_sociais{
+    position: absolute;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 5%;
+    gap: 25px;
+    
+}
+
+.icones_redes_sociais img{
+    width: 18px;
+}
+
+
+
+/*laptop*/
+
+@media screen and (max-width: 1024px) {
+
+    header, main, section{
+        max-width: 100%;
+    }
+
+
+
+   
+
+    .menu{
+        justify-content: end;
+        
+    }.menu a{
+        padding-left: 16px;
+        margin-right: 6px;
+        
+    }
+}
+
+/*Tablet    */
+
+@media screen and (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+
+    .lado-direito img{
+        display: none;
+    }
+
+    
+
+    .icones_redes_sociais{
+        padding-top: 9px;
+    }
+    .name_imagen{
+        margin-left: 10px;
+    }
+
+    .name_imagen h2{
+        font-size: 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .mobile-menu a {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2.6rem;
+        margin-left: 5px;
+    }
+
+    .mobile-menu .menu{
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+
+    .open{
+        display: block;
+        background-color: #6f7b81 ;
+    }
+
+   
+}
+
+/*****/
+
+
+/*Dispositivo movel g */
+
+@media screen and (max-width:425px) {
+
+    
+
+    .icones_redes_sociais a{
+        padding-top: 30px;
+    }
+
+    .mobile-menu .menu{
+        padding-top: 2rem;
+    }
+}
+
+/********/
+
+/*Dispositivo movel M*/
+
+@media screen and (max-width:375px) {
+    
+
+    .icones_redes_sociais{
+        margin-top: 25px;
+        margin-left: 35px;
+        gap: 40px;
+    }
+
+    .icones_redes_sociais img{
+        width: 20px;
+    }
+}
+
+
+/*variaveis*/
+
+@media screen and (max-width: 390px) {
+    
+
+    .icones_redes_sociais{
+        margin-top: 25px;
+        gap: 40px;
+    }
+
+    .icones_redes_sociais img{
+        width: 20px;
+    }
+}
+
+
+@media screen and (max-width: 393px) {
+    
+
+    .icones_redes_sociais{
+        margin-top: 30px;
+        gap: 40px;
+    }
+
+    .icones_redes_sociais img{
+        width: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 820px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+
+    .lado-direito{
+        display: none;
+    }
+
+    
+
+    .icones_redes_sociais{
+        margin-top: 70px;
+        gap: 40px;
+    }
+
+    .icones_redes_sociais img{width: 20px;}
+
+    .name_imagen{
+        margin-left: 10px;
+    }
+
+    .name_imagen h2{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 912px) {
+   
+
+    .icones_redes_sociais{
+        
+        margin-top: 50px;
+        gap: 36px;
+    }
+
+    .icones_redes_sociais img{
+        width: 20px;
+    }
+
+    .menu a{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+   
+
+    .informacoes input{
+        height: 45px;
+    }
+
+    .icones_redes_sociais{
+        margin-top: 40px;
+        margin-left: 35px;
+    }
+
+    .icones_redes_sociais img{
+        
+        width: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 1172px) {
+    .informacoes{
+        margin-top: 320px;
+    }
+}
