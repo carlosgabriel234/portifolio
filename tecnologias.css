@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+nav{
+    margin: 10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.mobile-menu-icon img{
+    width: 25px;
+    
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.name_imagen{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 8%;
+}
+
+.foto-codico{
+    width: 34px;
+    
+    
+    
+}
+.menu{
+    display: flex;
+    gap: 80px; 
+}
+
+.menu a{
+    position: relative;
+    margin-left: -10%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+main img{
+    width: 100px;
+}
+
+.domino{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.domino img{
+    margin-top: 20px;
+    padding: 25px 40px;
+}
+
+.estudando{
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+.estudando img{
+    padding: 40px 40px;
+}
+
+
+.domino h2{
+    color: #393f42;
+}
+
+.estudando h2{
+    color: #393f42;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .menu{
+        justify-content: end;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .mobile-menu a {
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2.6rem;
+        margin-left: 5px;
+    }
+
+    .mobile-menu .menu{
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+
+    .open{
+        display: block;
+        background-color: #6f7b81 ;
+    }
+}
