@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    width: 100%;
+}
+
+
+nav{
+    margin: 10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.mobile-menu-icon img{
+    width: 25px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+.name_imagen{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 8%;
+}
+
+.foto-codico{
+    width: 34px;
+    
+    
+    
+}
+.menu{
+    display: flex;
+    gap: 80px; 
+}
+
+.menu a{
+    position: relative;
+    margin-left: -10%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+
+
+
+
+.box-projeto img{
+    padding: 20px;
+    width: 400px;
+    height: 270px;
+    border-radius: 30px;
+}
+
+
+    
+
+.box-projeto p{
+    font-size: 17px;
+    color: #393f42;;
+}
+
+.box-projeto h2{
+    color: #393f42;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+.projetos{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.box-projeto{
+    padding: 10px;
+    width: 350px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 150px;
+    box-shadow: 4px 4px 3px;
+    
+    
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .menu{
+        justify-content: end;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+
+    .mobile-menu a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2.6rem; 
+        margin-left: 5px;
+    }
+
+    .mobile-menu .menu{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+        background-color: #6f7b81;
+    }
+
+  
+
+    .projetos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-projeto{
+        margin-bottom: 20px;
+    }
+  
+
+    
+}
+
+
+@media screen and (max-width:381px) {
+    .box-projeto{
+        width: 200px;
+    }
+}
+
